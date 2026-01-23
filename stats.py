@@ -1,14 +1,14 @@
-def get_book_text(filepath):
-    with open(filepath) as f:
-        return f.read()
+def get_book_text(filepath): # A function to get the text in strings of a book.
+    with open(filepath) as f: # Open the file and name it as f
+        return f.read() # return the whole text in a string
 
 
-def get_num_words(book):
+def get_num_words(book): # count the num of words in the book
     num_words = len(book.split())
-    return num_words
+    return num_words 
 
 
-def get_char(book_text):
+def get_char(book_text): 
     book_text = book_text.lower()
     char_dict = {}
     
